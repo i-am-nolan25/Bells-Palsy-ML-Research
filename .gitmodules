@@ -1,0 +1,3 @@
+[submodule "Emotrics"]
+	path = Emotrics
+	url = https://github.com/dguari1/Emotrics
