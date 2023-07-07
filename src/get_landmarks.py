@@ -11,6 +11,8 @@ from dlib import get_frontal_face_detector
 from dlib import shape_predictor
 from dlib import rectangle
 
+import os
+
 import cv2
 import numpy as np
 from pathlib import Path
@@ -18,7 +20,7 @@ from landmark_utils import to_gemma_landmarks
 
 
 class GetLandmarks:
-   
+
     def __init__(self, image, ModelName="MEE", resolution=200, colored=False, gemma_lm=True):
         super(GetLandmarks, self).__init__()
         self._image = image
@@ -47,24 +49,25 @@ class GetLandmarks:
         else: #is a  windows 
             #scriptDir = os.getcwd()
             scriptDir = Path.cwd()
-        '''    
+        '''
+        includeDir = '../../src/include'
         
         if self._ModelName == 'iBUG':  #user wants to use iBUGS model
             #predictor = shape_predictor(scriptDir + os.path.sep + 'include' +os.path.sep +'data'+ os.path.sep + 'shape_predictor_68_face_landmarks.dat')
-            predictor = shape_predictor(str(Path('./include', 'data', 'shape_predictor_68_face_landmarks.dat')))
+            predictor = shape_predictor(str(Path(includeDir, 'data', 'shape_predictor_68_face_landmarks.dat')))
         elif self._ModelName == 'MEE':  #user wants to use MEE model
             #predictor = shape_predictor(scriptDir + os.path.sep + 'include' +os.path.sep +'data'+ os.path.sep + 'mee_shape_predictor_68_face_landmarks.dat')
-            predictor = shape_predictor(str(Path('./include', 'data', 'mee_shape_predictor_68_face_landmarks.dat')))
+            predictor = shape_predictor(str(Path(includeDir, 'data', 'mee_shape_predictor_68_face_landmarks.dat')))
 
             
         elif self._ModelName == 'iBUG_new':  #user wants to use iBUG_new model
-            predictor = shape_predictor(str(Path('./include', 'data', 'shape_predictor_68_face_landmarks_GTX.dat')))
+            predictor = shape_predictor(str(Path(includeDir, 'data', 'shape_predictor_68_face_landmarks_GTX.dat')))
  
         elif self._ModelName == 'MEE_2':  #user wants  to use MEE_2 model
-            predictor = shape_predictor(str(Path('./include', 'data', 'mee_shape_predictor_68_face_landmarks2.dat')))
+            predictor = shape_predictor(str(Path(includeDir, 'data', 'mee_shape_predictor_68_face_landmarks2.dat')))
  
         elif self._ModelName == 'MEE_3':  #user wants  to use MEE_3 model
-            predictor = shape_predictor(str(Path('./include', 'data', 'mee_shape_predictor_68_face_landmarks3.dat')))
+            predictor = shape_predictor(str(Path(includeDir, 'data', 'mee_shape_predictor_68_face_landmarks3.dat')))
 
         else: #user wants to use own model        
             predictor = shape_predictor(str(Path(self._ModelName)))
