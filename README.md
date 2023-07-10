@@ -1,4 +1,4 @@
-# Bell's Palsy Severity Determination by Facial Recognition Software and Machine Learning
+# Bell's Palsy Severity Determination by Computer Vision and Machine Learning
 
 This project heavily relies on Emotrics, which is a machine-learning-based facial landmark predictor that allows us to extract facial landmarks from images.
 
