@@ -1,6 +1,23 @@
 # Bell's Palsy Severity Determination by Computer Vision and Machine Learning
 
-# Background
+This repository represents the culmination of our summer research project, which delves into the innovative realm of computer vision and machine learning techniques to tackle the crucial task of determining the severity of Bell's Palsy.
+
+## Researcher
+
+- Nolan Lwin
+
+## Mentors
+
+- Dr. Joshua Stough
+- Dr. Keith Buffinton
+- Dr. Arun Gadre
+
+## Sponsored by
+
+- [Bucknell University](https://www.bucknell.edu)
+- [Geisinger](https://www.geisinger.org/)
+
+## Background
 
 Facial nerve paralysis (FNP) is a medical condition that affects the ability of individuals to control certain facial muscles. One of the most common forms of FNP is Bell's Palsy, which affects approximately 4 out of 10,000 people in the United States each year. People with Bell's Palsy experience one or, in rare cases, both sides of their face becoming unresponsive. The exact cause of Bell's Palsy is unknown, and it typically takes up to six months or longer for a patient to recover after being affected.
 
@@ -10,12 +27,12 @@ The goal of the research project discussed in this report is to develop software
 
 To achieve this goal, the research project will follow a framework similar to that used in other studies with similar goals. This includes:
 
-Using an ML-based landmark localizer to determine the locations of key facial anatomical points (landmarks) on an image of the face.
-Correcting for head tilt or perspective distortion using geometric or ML algorithms.
-Calculating asymmetry in the face using some algorithmic method.
-Using an algorithmic or machine learning-based approach to translate the asymmetry measurements into classifications.
+- Using an ML-based landmark localizer to determine the locations of key facial anatomical points (landmarks) on an image of the face.
+- Correcting for head tilt or perspective distortion using geometric or ML algorithms.
+- Calculating asymmetry in the face using some algorithmic method.
+- Using an algorithmic or machine learning-based approach to translate the asymmetry measurements into classifications.
 
-# Literature Review
+## Literature Review
 
 These are the most important studies we used in our work:
 
@@ -25,7 +42,23 @@ These are the most important studies we used in our work:
 
 - Gemma Parra-Dominguez’s study [[5]](#References) is fundamental to our work. We are mainly incorporating his proposed framework and adding the severity grading functionality in the final step. Gemma proposes to use 51 landmark points instead of 68 as the jaw line is not the main concern for evaluating illness or severity grading of facial palsy. Gemma also defined a set of distances and features, found through an ML program. Gemma’s work used a Multilayer Perceptron Network to differentiate between healthy & ill images.
 
-# References
+## Technologies Used :gear:
+
+We utilize a variety of technologies in our research project, including, but not limited to, the following:
+
+- Python
+- OpenCV
+- Pandas
+- NumPy
+- SciPy
+- Dlib
+- Scikit-learn
+- Matplotlib
+- Jupyter Notebook
+- Git
+- Github
+
+## References
 
 - [1] Miller, Matthew Q., et al. “The Auto-eFACE: Machine Learning-Enhanced Program Yields Automated Facial Palsy Assessment Tool.” Plastic and reconstructive surgery vol. 147, 2 (2021): 467-474. doi:10.1097/PRS.0000000000007572
 
@@ -36,3 +69,15 @@ These are the most important studies we used in our work:
 - [4] Bandini, Andrea, et al. “A New Dataset for Facial Motion Analysis in Individuals With Neurological Disorders.” IEEE journal of biomedical and health informatics vol. 25, 4 (2021): 1111-1119. doi:10.1109/JBHI.2020.3019242
 
 - [5] Parra-Dominguez, et al. “Facial Paralysis Detection on Images Using Key Point Analysis.” Appl. Sci. 2021, 11, 2435. https://doi.org/10.3390/app11052435
+
+## License :page_facing_up:
+
+The project is available as open source under the terms of the [MIT License](LICENSE).
+
+## Troubleshooting :hammer_and_wrench:
+
+Please create a new [issue](https://github.com/i-am-nolan25/Bells-Palsy-ML-Research/issues/new).
+
+# Contact 📬
+
+For any inquiries, feedback, or collaboration opportunities, please feel free to reach out to me through my [email](nl020@bucknell.edu) or [LinkedIn](https://www.linkedin.com/in/naing-oo-lwin-nolan/).
