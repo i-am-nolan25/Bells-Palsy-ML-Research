@@ -17,6 +17,10 @@ This repository represents the culmination of our summer research project, which
 - [Bucknell University](https://www.bucknell.edu)
 - [Geisinger](https://www.geisinger.org/)
 
+## Research Presentation
+
+This research was presented at the 12th [Susquehanna Valley Undergraduate Research Symposium (SVURS 2023)](https://svurs.scholar.bucknell.edu/). Please follow this [link](./poster/SVURS2023_Lwin.pdf) to the presentation poster. 
+
 ## Background
 
 Facial nerve paralysis (FNP) is a medical condition that affects the ability of individuals to control certain facial muscles. One of the most common forms of FNP is Bell's Palsy, which affects approximately 4 out of 10,000 people in the United States each year. People with Bell's Palsy experience one or, in rare cases, both sides of their face becoming unresponsive. The exact cause of Bell's Palsy is unknown, and it typically takes up to six months or longer for a patient to recover after being affected.
